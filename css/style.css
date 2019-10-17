@@ -57,17 +57,20 @@ p{
 
 #info1 .info-right{
   margin-top:90px;
-  
 }
 
 #info2{
   margin:20px 0 60px 0;
 }
 
+/* #info-left {
+  margin-right: 100%;
+} */
+
 #contact{
-  background:url(../img/image3.png);
+  background-color: #666;;
   padding:40px;
-  color:#fff;
+  color:#666;
   border-top:#333 7px solid;
   border-bottom:#333 7px solid;
 }
