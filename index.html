@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="/__/firebase/7.3.0/firebase-app.js"></script>
+    <script src="/__/firebase/7.3.0/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -116,20 +119,20 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5 col-sm-5">
-            <form>
+            <form id="ContactForm" onsubmit="return false;" novalidate>
               <div class="form-group">
                 <label>Name: </label>
-                <input class="form-control" type="text" name="" value="" placeholder="Enter Name">
+                <input class="form-control" type="text" id="Name" name="Name" value="" placeholder="Enter Name" required>
               </div>
               <div class="form-group">
                 <label>Email: </label>
-                <input class="form-control" type="text" name="" value="" placeholder="Enter Email">
+                <input class="form-control" type="text" id="Email" name="Email" value="" placeholder="Enter Email" pattern="^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$" required>
               </div>
               <div class="form-group">
                 <label>Message: </label>
-                <textarea class="form-control" name="" value="" placeholder="Enter Message"></textarea>
+                <textarea class="form-control" id="Message" name="Message" value="" placeholder="Enter Message" required></textarea>
               </div>
-              <button class="btn btn-default">Submit</button>
+              <button class="btn btn-default" type="submit" id="btnSubmit">Submit</button>
             </form>
           </div>
           <div class="col-md-7 col-sm-7">
@@ -205,5 +208,6 @@
       });
     });
     </script>
+    <script type="module" src="js/index.js"></script>
   </body>
 </html>
