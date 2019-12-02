@@ -1,5 +1,5 @@
 body{
-  margin-top:190px;
+  margin-top:170px;
   margin-bottom: 170px;
   font-size:16px;
 }
@@ -62,7 +62,12 @@ p{
 }
 
 #info1 .info-right{
-  margin-top:90px;
+  margin-top:200px;
+}
+
+#info1 .showcase-left{
+  margin-top: 180px;
+  margin-bottom: 50px;
 }
 
 #info2{
